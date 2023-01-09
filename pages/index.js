@@ -28,7 +28,7 @@ export default function Home() {
       <main className="px-10">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-quicksand">Glauber Perez</h1>
+            <h1 className="text-2xl font-quicksand">Glauber Perez</h1>
             <ul className="flex items-center">
               <li className="cursor-pointer text-2xl">
                 {
@@ -41,7 +41,7 @@ export default function Home() {
               </li>
               <li>
                 <a 
-                className="px-4 py-2 rounded-lg ml-8" 
+                className="px-4 py-2 rounded-lg ml-8 bg-emeraldgreen text-white text-lg font-quicksand" 
                 href=""
                 >
                   Curriculo
@@ -49,36 +49,45 @@ export default function Home() {
                 </li> 
             </ul>
           </nav>
+          <div className="relative mx-auto bg-gradient-to-b from-emeraldgreen rounded-full w-80 h-80 mt-0 overflow-hidden">
+            <Image src={dev} layout="fill" objectFit="cover" alt="dev" />
+          </div>
           <div className="text-center p-10">
-            <h2 className="font-quicksand text-5xl py-3 text-slate-500">Glauber Perez</h2>
+            <h2 className="font-quicksand text-5xl py-3 text-emeraldgreen">Glauber Perez</h2>
             <h3 className="font-quicksand text-2xl py-2">Desenvolvedor Full-Stack.</h3>
-            <p className="font-quicksand text-md py-5 leading-8 text-gray-800">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nisl nisl aliquet nisl, nec aliquet nunc nisl vel mauris. Sed euismod, nunc vel tincidunt lacinia, nisl nisl aliquet nisl, nec aliquet nunc nisl vel mauris.
-            </p>
+            <p className="font-sourcecodepro text-md py-5 leading-8">
+            Sou um jovem desenvolvedor apaixonado por tecnologia e cybersegurança. Estou sempre procurando novas oportunidades de aprendizado e crescimento. Sou um profissional dedicado e apaixonado pelo que faço, e espero ter a chance de contribuir para projetos interessantes e desafiantes.            </p>
           </div>
           <div className="text-6xl flex justify-center gap-10 py-3">
-            <AiFillGithub/>
-            <AiFillLinkedin/>
-          </div>
-          <div className="relative mx-auto bg-gradient-to-b from-slate-500 rounded-full w-96 h-96 mt-20 overflow-hidden">
-            <Image src={dev} layout="fill" objectFit="cover" alt="dev" />
+            <a href="https://github.com/glauberperez">
+              <AiFillGithub/>
+            </a>
+            <a href="https://www.linkedin.com/in/glauber-perez-0b0b1b1b9/">
+              <AiFillLinkedin/>
+            </a>
           </div>
         </section>  
 
         <section>
           <div>
-            <h3 className="font-quicksand text-4xl">serviços que ofereço:</h3>
-            <p className="text-md py-2 leading-8 text-gray-800"> 
-              Lorem ipsum dolor sit amet.
-            </p>
-            <p className="text-md py-2 leading-8 "> 
-              Lorem ipsum dolor sit amet.
-            </p>
+
+            <h3 className="font-quicksand text-4xl p-5">Projetos:</h3>
+            
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-10">
+              
+              <div className="bg-emeraldgreen rounded-lg p-5">
+                <h4 className="font-quicksand text-2xl">Projeto 1</h4>
+                <p className="font-sourcecodepro text-md py-5 leading-8">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nulla vitae elit libero, a pharetra augue.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.
+                  Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Donec sed odio dui.
+                </p>
+              </div>
+            </div>
+
           </div>
-        </section>
-
-        <section>
-
         </section>
 
       </main>

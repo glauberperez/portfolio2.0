@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         quicksand: ["Quicksand", "sans-serif"],
+        sourcecodepro: ["Source Code Pro", "serif"],
       },
     },
   },
