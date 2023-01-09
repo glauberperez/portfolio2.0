@@ -55,7 +55,7 @@ export default function Home() {
           <div className="text-center p-10">
             <h2 className="font-quicksand text-5xl py-3 text-emeraldgreen">Glauber Perez</h2>
             <h3 className="font-quicksand text-2xl py-2">Desenvolvedor Full-Stack.</h3>
-            <p className="font-sourcecodepro text-md py-5 leading-8">
+            <p className="font-sourcecodepro text-md py-5 px-5 leading-8">
             Sou um jovem desenvolvedor apaixonado por tecnologia e cybersegurança. Estou sempre procurando novas oportunidades de aprendizado e crescimento. Sou um profissional dedicado e apaixonado pelo que faço, e espero ter a chance de contribuir para projetos interessantes e desafiantes.            </p>
           </div>
           <div className="text-6xl flex justify-center gap-10 py-3">
@@ -73,7 +73,30 @@ export default function Home() {
 
             <h3 className="font-quicksand text-4xl p-5">Projetos:</h3>
             
-            <div className="grid grid-cols-2 md:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              
+              <div className="bg-emeraldgreen rounded-lg p-5">
+                <h4 className="font-quicksand text-2xl ">Projeto 1</h4>
+                <a href=" " className="font-quicksand text-2xl text-right">link</a>
+                <p className="font-sourcecodepro text-md py-5 leading-8 ">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nulla vitae elit libero, a pharetra augue.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.
+                  Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Donec sed odio dui.
+                </p>
+              </div>
+
+              <div className="bg-emeraldgreen rounded-lg p-5">
+                <h4 className="font-quicksand text-2xl">Projeto 1</h4>
+                <p className="font-sourcecodepro text-md py-5 leading-8">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nulla vitae elit libero, a pharetra augue.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.
+                  Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Donec sed odio dui.
+                </p>
+              </div>
               
               <div className="bg-emeraldgreen rounded-lg p-5">
                 <h4 className="font-quicksand text-2xl">Projeto 1</h4>
@@ -85,6 +108,51 @@ export default function Home() {
                   Donec sed odio dui.
                 </p>
               </div>
+
+              <div className="bg-emeraldgreen rounded-lg p-5">
+                <h4 className="font-quicksand text-2xl">Projeto 1</h4>
+                <p className="font-sourcecodepro text-md py-5 leading-8">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nulla vitae elit libero, a pharetra augue.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.
+                  Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Donec sed odio dui.
+                </p>
+              </div>
+
+              <div className="bg-emeraldgreen rounded-lg p-5">
+                <h4 className="font-quicksand text-2xl">Projeto 1</h4>
+                <p className="font-sourcecodepro text-md py-5 leading-8">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nulla vitae elit libero, a pharetra augue.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.
+                  Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Donec sed odio dui.
+                </p>
+              </div>
+
+              <div className="bg-emeraldgreen rounded-lg p-5">
+                <h4 className="font-quicksand text-2xl">Projeto 1</h4>
+                <p className="font-sourcecodepro text-md py-5 leading-8">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nulla vitae elit libero, a pharetra augue.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.
+                  Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Donec sed odio dui.
+                </p>
+              </div>
+
+              <div className="bg-emeraldgreen rounded-lg p-5">
+                <h4 className="font-quicksand text-2xl">Projeto 1</h4>
+                <p className="font-sourcecodepro text-md py-5 leading-8">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nulla vitae elit libero, a pharetra augue.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.
+                  Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Donec sed odio dui.
+                </p>
+              </div>
+
             </div>
 
           </div>
