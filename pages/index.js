@@ -17,6 +17,18 @@ export default function Home() {
 
   const currentTheme = theme; //=== 'system' ? systemTheme : theme;
 
+  const [repos, setRepos] = useState([]);
+
+  useEffect(() => {
+    fetch('https://api.github.com/users/glauberperez/repos')
+      .then((res) => res.json())
+      .then((data) => {
+        setRepos(data);
+        console.log(repos);
+      });
+  }, []);
+
+
   return (
     <>
       <Head>
@@ -74,84 +86,27 @@ export default function Home() {
             <h3 className="font-quicksand text-4xl p-5">Projetos:</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              
-              <div className="bg-emeraldgreen rounded-lg p-5">
-                <h4 className="font-quicksand text-2xl ">Projeto 1</h4>
-                <a href=" " className="font-quicksand text-2xl text-right">link</a>
-                <p className="font-sourcecodepro text-md py-5 leading-8 ">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nulla vitae elit libero, a pharetra augue.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  Nullam quis risus eget urna mollis ornare vel eu leo.
-                  Donec sed odio dui.
-                </p>
-              </div>
-
-              <div className="bg-emeraldgreen rounded-lg p-5">
-                <h4 className="font-quicksand text-2xl">Projeto 1</h4>
-                <p className="font-sourcecodepro text-md py-5 leading-8">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nulla vitae elit libero, a pharetra augue.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  Nullam quis risus eget urna mollis ornare vel eu leo.
-                  Donec sed odio dui.
-                </p>
-              </div>
-              
-              <div className="bg-emeraldgreen rounded-lg p-5">
-                <h4 className="font-quicksand text-2xl">Projeto 1</h4>
-                <p className="font-sourcecodepro text-md py-5 leading-8">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nulla vitae elit libero, a pharetra augue.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  Nullam quis risus eget urna mollis ornare vel eu leo.
-                  Donec sed odio dui.
-                </p>
-              </div>
-
-              <div className="bg-emeraldgreen rounded-lg p-5">
-                <h4 className="font-quicksand text-2xl">Projeto 1</h4>
-                <p className="font-sourcecodepro text-md py-5 leading-8">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nulla vitae elit libero, a pharetra augue.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  Nullam quis risus eget urna mollis ornare vel eu leo.
-                  Donec sed odio dui.
-                </p>
-              </div>
-
-              <div className="bg-emeraldgreen rounded-lg p-5">
-                <h4 className="font-quicksand text-2xl">Projeto 1</h4>
-                <p className="font-sourcecodepro text-md py-5 leading-8">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nulla vitae elit libero, a pharetra augue.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  Nullam quis risus eget urna mollis ornare vel eu leo.
-                  Donec sed odio dui.
-                </p>
-              </div>
-
-              <div className="bg-emeraldgreen rounded-lg p-5">
-                <h4 className="font-quicksand text-2xl">Projeto 1</h4>
-                <p className="font-sourcecodepro text-md py-5 leading-8">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nulla vitae elit libero, a pharetra augue.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  Nullam quis risus eget urna mollis ornare vel eu leo.
-                  Donec sed odio dui.
-                </p>
-              </div>
-
-              <div className="bg-emeraldgreen rounded-lg p-5">
-                <h4 className="font-quicksand text-2xl">Projeto 1</h4>
-                <p className="font-sourcecodepro text-md py-5 leading-8">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nulla vitae elit libero, a pharetra augue.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  Nullam quis risus eget urna mollis ornare vel eu leo.
-                  Donec sed odio dui.
-                </p>
-              </div>
+              {
+                repos.map(function(repo){
+                  if(repo.topics.includes('portfolio')) {
+                    return(
+                    <div className="bg-emeraldgreen rounded-lg p-5">
+                      <div className="flex justify-between">
+                        <h4 className="font-quicksand text-2xl ">{repo.name}</h4>
+                        <a href={repo.html_url} className="font-quicksand text-xl text-right">src code</a>
+                      </div>
+                      <p className="font-sourcecodepro text-md py-5 leading-8 ">
+                        {repo.description}
+                      </p>
+                    </div>
+                    )
+                  }else{
+                    return(
+                    <></>
+                    )
+                  }
+                })
+              }
 
             </div>
 
