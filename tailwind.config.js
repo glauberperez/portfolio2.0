@@ -9,6 +9,8 @@ module.exports = {
       colors: {
         black: "#211522",
         emeraldgreen: "#02894B",
+        emeraldgreenlight: "#017b43",
+        emeraldgreenlighter: "#016d3c",
         forestgreen: "#016236",
       },
       fontFamily: {

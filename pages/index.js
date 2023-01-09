@@ -15,7 +15,7 @@ export default function Home() {
 
   const {theme, setTheme} = useTheme();
 
-  const currentTheme = theme; //=== 'system' ? systemTheme : theme;
+  const currentTheme = theme;
 
   const [repos, setRepos] = useState([]);
 
@@ -53,8 +53,8 @@ export default function Home() {
               </li>
               <li>
                 <a 
-                className="px-4 py-2 rounded-lg ml-8 bg-emeraldgreen text-white text-lg font-quicksand" 
-                href=""
+                className="neonText px-4 py-2 rounded-lg ml-8 text-lg font-quicksand bg-emeraldgreen hover:bg-emeraldgreenlight active:bg-emeraldgreenlighter" 
+                href="./GlauberPerez.pdf"
                 >
                   Curriculo
                 </a>
@@ -93,7 +93,7 @@ export default function Home() {
                     <div className="bg-emeraldgreen rounded-lg p-5">
                       <div className="flex justify-between">
                         <h4 className="font-quicksand text-2xl ">{repo.name}</h4>
-                        <a href={repo.html_url} className="font-quicksand text-xl text-right">src code</a>
+                        <a href={repo.html_url} className="font-quicksand text-xl text-right hover:text-slate-300 active:text-slate-500">url</a>
                       </div>
                       <p className="font-sourcecodepro text-md py-5 leading-8 ">
                         {repo.description}
