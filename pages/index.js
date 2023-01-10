@@ -26,6 +26,7 @@ export default function Home() {
         setRepos(data);
         console.log(repos);
       });
+      //eslint-disable-next-line
   }, []);
 
   return (
