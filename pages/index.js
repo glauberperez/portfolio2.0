@@ -93,7 +93,7 @@ export default function Home() {
                     <div key={repo.id} className="bg-emeraldgreen rounded-lg p-5">
                       <div className="flex justify-between">
                         <h4 className="font-quicksand text-2xl ">{repo.name}</h4>
-                        <a href={repo.html_url} className="font-quicksand text-xl text-right hover:text-slate-300 active:text-slate-500">url</a>
+                        <a href={repo.html_url} className="font-quicksand text-3xl text-right hover:text-slate-300 active:text-slate-500"><AiFillGithub/></a>
                       </div>
                       <p className="font-sourcecodepro text-md py-5 leading-8 ">
                         {repo.description}
