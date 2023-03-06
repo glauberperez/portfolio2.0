@@ -15,7 +15,9 @@ module.exports = {
       },
       fontFamily: {
         quicksand: ["Quicksand", "sans-serif"],
-        sourcecodepro: ["Source Code Pro", "serif"],
+        sourcecodepro: ["Source Code Pro", "sans-serif"],
+        sanfrancisco: ["San Francisco", "sans-serif"],
+
       },
     },
   },
