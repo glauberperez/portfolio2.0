@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </section>  
 
-        <section>
+        <section className="py-10">
           <div>
 
             <h3 className="font-sanfrancisco text-4xl p-5">Projetos:</h3>
