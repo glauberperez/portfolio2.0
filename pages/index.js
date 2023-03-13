@@ -53,7 +53,7 @@ export default function Home() {
               </li>
               <li>
                 <a 
-                className="neonText px-4 py-2 rounded-lg ml-8 text-lg font-sanfrancisco bg-emeraldgreen hover:bg-emeraldgreenlight active:bg-emeraldgreenlighter" 
+                className="px-4 py-2 rounded-lg ml-8 text-lg font-sanfrancisco bg-emeraldgreen hover:bg-emeraldgreenlight active:bg-emeraldgreenlighter" 
                 href="./GlauberPerez.pdf"
                 >
                   Curriculo
